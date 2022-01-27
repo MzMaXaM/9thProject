@@ -1,0 +1,47 @@
+#theGame article{
+  background-color: brown;
+  width: 50rem;
+  height: 9rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px rgba(25, 25, 25, 0.8);
+  padding: 0.5rem;
+  display: none;
+}
+#activePlayerName{
+  font-weight: bold;
+}
+#gameBoard{
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: repeat(3, 6rem);
+  justify-content: center;
+  gap: 0.5rem;
+  display: none;
+}
+#gameBoard li{
+  background-color: bisque;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: brown;
+}
+#gameBoard li:hover{
+  background-color: brown;
+}
+#gameBoard li.disabled{
+  background-color: rgb(195, 195, 195);
+  cursor: default;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  #gameBoard{
+    gap: 0.3rem;
+  }
+}

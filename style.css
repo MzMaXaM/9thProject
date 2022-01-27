@@ -23,9 +23,11 @@ h1{
 }
 h2{
   font-size: 1rem;
+  margin: 1rem;
 }
 h3{
   font-size: 2rem;
+  margin: 1rem;
 }
 button{
   font: inherit;
@@ -112,6 +114,7 @@ input{
   border-radius: 8px;
   color: blueviolet;
   padding: 1rem;
+  box-shadow: 4px 4px 10px rgba(5, 5, 5, 0.5);
 }
 
 #playersFields p {

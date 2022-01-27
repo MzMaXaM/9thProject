@@ -11,6 +11,7 @@
     rel="stylesheet">
   <title>Tic-Tac-Toe</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="game.css">
   <script src="script.js" defer></script>
 </head>
 
@@ -59,17 +60,17 @@
         <P>Press "Start New Game" to start...</P>
       </article>
       <p>It's your turn <span id="activePlayerName">PLAYER NAME</span></p>
-      <ol>
+      <ol id="gameBoard">
         <li></li>
-        <li></li>
-        <li></li>
-
-        <li></li>
-        <li></li>
+        <li class="disabled">X</li>
         <li></li>
 
         <li></li>
+        <li class="disabled">O</li>
+        <li class="disabled">O</li>
+
         <li></li>
+        <li class="disabled">X</li>
         <li></li>
       </ol>
     </section>
