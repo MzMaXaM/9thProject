@@ -10,9 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400;700;900&display=swap"
     rel="stylesheet">
   <title>Tic-Tac-Toe</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="game.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/game.css">
+  <script src="/js/scripts.js" defer></script>
+  <script src="/js/selectors.js" defer></script>
 </head>
 
 <body>
@@ -27,8 +28,8 @@
       <label for="playername">Player name</label>
       <input type="text" name="username" id="playername">
       <div>
-        <button type="button" class="red">Cancel</button>
-        <button type="submit">Confirm</button>
+        <button type="button" class="red" id="cancelForm">Cancel</button>
+        <button type="submit" id="confirmForm">Confirm</button>
       </div>
     </form>
   </aside>
@@ -40,7 +41,7 @@
             <h2>Player 1</h2>
             <h3>PLAYER NAME</h3>
             <p>X</p>
-            <button>Edit</button>
+            <button id="player1EditBtn">Edit</button>
           </article>
         </li>
         <li>
@@ -48,11 +49,11 @@
             <h2>Player 2</h2>
             <h3>PLAYER NAME</h3>
             <p>O</p>
-            <button>Edit</button>
+            <button id="player2EditBtn">Edit</button>
           </article>
         </li>
       </ol>
-      <button class="green">Start New Game</button>
+      <button class="green" id="startGame">Start New Game</button>
     </section>
     <section id="theGame">
       <article>
