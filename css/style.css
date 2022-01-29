@@ -77,6 +77,9 @@ aside h2{
   font-size: 1.8rem;
   margin: 0.8rem;
 }
+#errorMessage{
+  color: brown;
+}
 button:hover{
   box-shadow: 1px 2px 3px rgba(5, 5, 5, 0.5);
   border: 1px solid transparent;
@@ -111,6 +114,7 @@ input{
 } 
 #playersFields li {
   background-color: antiquewhite;
+  width: 20rem;
   border-radius: 8px;
   color: blueviolet;
   padding: 1rem;
@@ -146,5 +150,8 @@ aside form{
   }
 #playersFields ol {
     gap: 0.3rem;
+  }
+  #playersFields li {
+    width: 15rem;
   }
 }

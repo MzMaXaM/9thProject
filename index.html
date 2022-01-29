@@ -25,8 +25,9 @@
   <aside>
     <h2>Choose your name</h2>
     <form>
-      <label for="playername">Player name</label>
-      <input type="text" name="username" id="playername">
+      <label for="playerNameInput">Player name</label>
+      <input type="text" name="username" id="playerNameInput">
+      <p id="errorMessage"></p>
       <div>
         <button type="button" class="red" id="cancelForm">Cancel</button>
         <button type="submit" id="confirmForm">Confirm</button>
@@ -37,19 +38,29 @@
     <section id="playersFields">
       <ol>
         <li>
-          <article>
+          <article id="firstPlayerField">
             <h2>Player 1</h2>
             <h3>PLAYER NAME</h3>
             <p>X</p>
-            <button id="player1EditBtn">Edit</button>
+            <button 
+              id="player1EditBtn" 
+              data-playerId="1"
+              data-playerMark="X">
+                Edit
+            </button>
           </article>
         </li>
         <li>
-          <article>
+          <article id="secondPlayerField">
             <h2>Player 2</h2>
             <h3>PLAYER NAME</h3>
             <p>O</p>
-            <button id="player2EditBtn">Edit</button>
+            <button 
+              id="player2EditBtn" 
+              data-playerId="2"
+              data-playerMark="O">
+                Edit
+            </button>
           </article>
         </li>
       </ol>
@@ -63,15 +74,15 @@
       <p>It's your turn <span id="activePlayerName">PLAYER NAME</span></p>
       <ol id="gameBoard">
         <li></li>
-        <li class="disabled">X</li>
+        <li></li>
         <li></li>
 
         <li></li>
-        <li class="disabled">O</li>
-        <li class="disabled">O</li>
+        <li></li>
+        <li></li>
 
         <li></li>
-        <li class="disabled">X</li>
+        <li></li>
         <li></li>
       </ol>
     </section>
