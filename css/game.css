@@ -12,12 +12,11 @@
   font-weight: bold;
 }
 #gameBoard{
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 6rem);
   grid-template-rows: repeat(3, 6rem);
   justify-content: center;
   gap: 0.5rem;
-  display: none;
 }
 #gameBoard li{
   background-color: bisque;
@@ -31,13 +30,15 @@
   color: brown;
 }
 #gameBoard li:hover{
-  background-color: brown;
+  background-color: rgb(224, 49, 181);
 }
 #gameBoard li.disabled{
   background-color: rgb(195, 195, 195);
   cursor: default;
 }
-
+#activePlayerMessage{
+  display: none;
+}
 
 
 @media only screen and (max-width: 700px) {
