@@ -1,7 +1,17 @@
 let playerEdit = 0
 let activePlayer = 1
 let fieldSymbol = 'X'
+let fieldsX = []
+let fieldsO = []
+let hitCount = 0
 let activePlayerName = document.getElementById('activePlayerName')
+let winnerName = document.getElementById('winnerName')
+let restartTime = false
+
+const winArrays = [[11,21,31],[12,22,32],[13,23,33],
+[11,12,13],[21,22,23],[31,32,33],
+[11,22,33],[13,22,31]]
+
 
 const btnPlayer1Edit = document.getElementById('player1EditBtn')
 const btnPlayer2Edit = document.getElementById('player2EditBtn')
@@ -16,6 +26,7 @@ const errorMsg = document.getElementById('errorMessage')
 const playerNameInput = document.getElementById('playerNameInput')
 const gameBoard = document.getElementById('gameBoard')
 const activePlayerMessage = document.getElementById('activePlayerMessage')
+const winnerFlag = document.querySelector('#theGame article')
 
 const firstPlayer = {
   name:'',

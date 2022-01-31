@@ -150,8 +150,7 @@ aside form{
   }
 #playersFields ol {
     gap: 0.3rem;
-  }
-  #playersFields li {
-    width: 15rem;
+    width: 95%;
+    margin: 0.5rem auto;
   }
 }

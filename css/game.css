@@ -1,6 +1,6 @@
 #theGame article{
   background-color: brown;
-  width: 50rem;
+  width: 43rem;
   height: 9rem;
   margin: 1rem auto;
   border-radius: 8px;
@@ -8,8 +8,17 @@
   padding: 0.5rem;
   display: none;
 }
+#theGame article h3{
+  display: inline;
+}
+#theGame article p{
+  margin-top: 2rem;
+}
 #activePlayerName{
   font-weight: bold;
+}
+#startGame{
+  margin: 1rem auto;
 }
 #gameBoard{
   display: none;
@@ -45,4 +54,8 @@
   #gameBoard{
     gap: 0.3rem;
   }
+#theGame article{
+  width: 95%;
+  max-width: 22rem;
+}
 }
